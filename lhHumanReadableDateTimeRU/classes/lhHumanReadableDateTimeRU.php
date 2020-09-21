@@ -23,7 +23,9 @@ class lhHumanReadableDateTimeRU {
     public function __construct($time='time()', $now='time()') {
         $timestamp = time();
         $this->time = new DateTime('@'. ($time == 'time()' ? $timestamp : strtotime($time)));
+        $this->time->setTimezone(new DateTimeZone(date_default_timezone_get()));
         $this->now = new DateTime('@'. ($now == 'time()' ? $timestamp : strtotime($now)));
+        $this->now->setTimezone(new DateTimeZone(date_default_timezone_get()));
     }
     
     public function day() {
