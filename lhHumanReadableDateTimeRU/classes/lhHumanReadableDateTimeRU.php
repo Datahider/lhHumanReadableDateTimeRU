@@ -9,7 +9,7 @@
 /**
  * Description of lhHumanReadableDateTimeRU
  *
- * @author drweb_000
+ * @author Πέτρος Ιωαννίδης
  */
 class lhHumanReadableDateTimeRU {
     
